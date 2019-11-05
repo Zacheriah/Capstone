@@ -7,12 +7,29 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mapView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let camera = GMSCameraPosition.camera(withLatitude: 35.307090, longitude: -80.735671, zoom: 17.0)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        view = mapView
+        
+        // Creates a marker in the center of the map.
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 35.307090, longitude: -80.735671)
+        marker.title = "T-Rex"
+        marker.snippet = "Woodward Hall"
+        marker.map = mapView
+        
+        let marker2 = GMSMarker()
+        marker2.position = CLLocationCoordinate2D(latitude: 35.308609, longitude: -80.733658)
+        marker2.title = "Plesiosaurus"
+        marker2.snippet = "Student Union"
+        marker2.map = mapView
     }
 
 

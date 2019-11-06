@@ -12,6 +12,7 @@ target 'Test' do
 # For example, to use Firebase Authentication and Cloud Firestore
 	pod 'Firebase/Auth'
 	pod 'Firebase/Firestore'
+	pod 'Firebase/Database'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   target 'TestTests' do

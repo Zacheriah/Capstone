@@ -16,9 +16,13 @@
 		54DF75EE237219B1000D6B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DF75EC237219B1000D6B00 /* LaunchScreen.storyboard */; };
 		54DF75F9237219B1000D6B00 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF75F8237219B1000D6B00 /* TestTests.swift */; };
 		54DF7604237219B1000D6B00 /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF7603237219B1000D6B00 /* TestUITests.swift */; };
-		54DF761423721B3C000D6B00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54DF761323721B3C000D6B00 /* GoogleService-Info.plist */; };
-		54DF761523721B3C000D6B00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54DF761323721B3C000D6B00 /* GoogleService-Info.plist */; };
-		54DF761623721B3C000D6B00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54DF761323721B3C000D6B00 /* GoogleService-Info.plist */; };
+		54F7D47623736CC8001EF24C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7D47523736CC8001EF24C /* LoginViewController.swift */; };
+		54F7D4782373702A001EF24C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54F7D4772373702A001EF24C /* GoogleService-Info.plist */; };
+		54F7D4792373702A001EF24C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54F7D4772373702A001EF24C /* GoogleService-Info.plist */; };
+		54F7D47A2373702A001EF24C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54F7D4772373702A001EF24C /* GoogleService-Info.plist */; };
+		54F7D47C2373733D001EF24C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7D47B2373733D001EF24C /* SignUpViewController.swift */; };
+		54F7D47D2373733D001EF24C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7D47B2373733D001EF24C /* SignUpViewController.swift */; };
+		54F7D47E2373733D001EF24C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7D47B2373733D001EF24C /* SignUpViewController.swift */; };
 		91D8E36CC0462839FB30AE78 /* Pods_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35E68096876663788E12F2 /* Pods_TestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +61,9 @@
 		54DF75FF237219B1000D6B00 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DF7603237219B1000D6B00 /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
 		54DF7605237219B1000D6B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54DF761323721B3C000D6B00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54F7D47523736CC8001EF24C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		54F7D4772373702A001EF24C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54F7D47B2373733D001EF24C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8184FF55400B52F51AC1DDBB /* Pods-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestTests/Pods-TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		A88DF70A0F69988B21EEA789 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 		AF35E68096876663788E12F2 /* Pods_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +115,7 @@
 		54DF75D7237219B0000D6B00 = {
 			isa = PBXGroup;
 			children = (
-				54DF761323721B3C000D6B00 /* GoogleService-Info.plist */,
+				54F7D4772373702A001EF24C /* GoogleService-Info.plist */,
 				54DF75E2237219B0000D6B00 /* Test */,
 				54DF75F7237219B1000D6B00 /* TestTests */,
 				54DF7602237219B1000D6B00 /* TestUITests */,
@@ -138,6 +144,8 @@
 				54DF75EA237219B1000D6B00 /* Assets.xcassets */,
 				54DF75EC237219B1000D6B00 /* LaunchScreen.storyboard */,
 				54DF75EF237219B1000D6B00 /* Info.plist */,
+				54F7D47523736CC8001EF24C /* LoginViewController.swift */,
+				54F7D47B2373733D001EF24C /* SignUpViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -280,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54DF75EE237219B1000D6B00 /* LaunchScreen.storyboard in Resources */,
-				54DF761423721B3C000D6B00 /* GoogleService-Info.plist in Resources */,
+				54F7D4782373702A001EF24C /* GoogleService-Info.plist in Resources */,
 				54DF75EB237219B1000D6B00 /* Assets.xcassets in Resources */,
 				54DF75E9237219B0000D6B00 /* Main.storyboard in Resources */,
 			);
@@ -290,7 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DF761523721B3C000D6B00 /* GoogleService-Info.plist in Resources */,
+				54F7D4792373702A001EF24C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DF761623721B3C000D6B00 /* GoogleService-Info.plist in Resources */,
+				54F7D47A2373702A001EF24C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F7D47623736CC8001EF24C /* LoginViewController.swift in Sources */,
 				54DF75E6237219B0000D6B00 /* ViewController.swift in Sources */,
+				54F7D47C2373733D001EF24C /* SignUpViewController.swift in Sources */,
 				54DF75E4237219B0000D6B00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F7D47D2373733D001EF24C /* SignUpViewController.swift in Sources */,
 				54DF75F9237219B1000D6B00 /* TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F7D47E2373733D001EF24C /* SignUpViewController.swift in Sources */,
 				54DF7604237219B1000D6B00 /* TestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

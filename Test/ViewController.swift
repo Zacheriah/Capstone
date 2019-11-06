@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mapView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let camera = GMSCameraPosition.camera(withLatitude: 35.307090, longitude: -80.735671, zoom: 17.0)
+        let camera = GMSCameraPosition.camera(withLatitude: 35.307090, longitude: -80.735671,    zoom: 17.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         

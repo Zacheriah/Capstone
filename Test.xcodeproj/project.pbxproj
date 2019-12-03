@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		08BEA4938FACFE3C0F068D3B /* Pods_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478CDB8DF606F9BA57F678F4 /* Pods_TestUITests.framework */; };
 		30AED20B2A8A619182BD6F60 /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C110680B2A060BEF55E1804 /* Pods_Test.framework */; };
+		54D36A232396EB7700BE933D /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D36A222396EB7700BE933D /* TitleViewController.swift */; };
 		54DF75E4237219B0000D6B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF75E3237219B0000D6B00 /* AppDelegate.swift */; };
 		54DF75E6237219B0000D6B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF75E5237219B0000D6B00 /* ViewController.swift */; };
 		54DF75E9237219B0000D6B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DF75E7237219B0000D6B00 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		2C110680B2A060BEF55E1804 /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478CDB8DF606F9BA57F678F4 /* Pods_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B24BF90B4B3E66588F4CF7B /* Pods-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTests/Pods-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54D36A222396EB7700BE933D /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		54DF75E0237219B0000D6B00 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DF75E3237219B0000D6B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54DF75E5237219B0000D6B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				54DF75EF237219B1000D6B00 /* Info.plist */,
 				54F7D47523736CC8001EF24C /* LoginViewController.swift */,
 				54F7D47B2373733D001EF24C /* SignUpViewController.swift */,
+				54D36A222396EB7700BE933D /* TitleViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				54DF75E6237219B0000D6B00 /* ViewController.swift in Sources */,
 				54F7D47C2373733D001EF24C /* SignUpViewController.swift in Sources */,
 				54DF75E4237219B0000D6B00 /* AppDelegate.swift in Sources */,
+				54D36A232396EB7700BE933D /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

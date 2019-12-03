@@ -20,7 +20,6 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -34,7 +33,6 @@ class SignUpViewController: UIViewController {
                     
                 })
                 
-                self.performSegue(withIdentifier: "SignUpToMap", sender: self)
             }else{
                 let alert = UIAlertController(title: "Sign up error.", message: error.debugDescription, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))

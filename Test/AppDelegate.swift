@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyA5ig8P8oVRJpnq-7S0cDs_NcvDpCB5mO4")
+        
         if Auth.auth().currentUser != nil {
             AppDelegate.showMap()
         }else{
@@ -37,7 +38,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     static func showTitle(){
-        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TitleVC")
+        appDelegate.window?.rootViewController = vc
+        appDelegate.window?.makeKeyAndVisible()
+    }
+    
+    static func showLogin(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC")
+        appDelegate.window?.rootViewController = vc
+        appDelegate.window?.makeKeyAndVisible()
+    }
+    
+    static func showSignUp(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SignUpVC")
+        appDelegate.window?.rootViewController = vc
+        appDelegate.window?.makeKeyAndVisible()
     }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

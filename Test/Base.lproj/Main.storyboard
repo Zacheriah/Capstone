@@ -53,12 +53,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k89-eJ-vbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5154.3999999999996" y="19.340329835082461"/>
+            <point key="canvasLocation" x="2193" y="1433"/>
         </scene>
-        <!--View Controller-->
+        <!--Title View Controller-->
         <scene sceneID="wm4-de-Ohi">
             <objects>
-                <viewController id="6EO-R0-78F" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TitleVC" id="6EO-R0-78F" customClass="TitleViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zCw-Ks-5zW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,6 +66,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BR7-8r-K6p">
                                 <rect key="frame" x="141" y="318" width="92" height="31"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="SignUpButton:" destination="6EO-R0-78F" eventType="touchUpInside" id="2gl-dM-cf2"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3oq-BI-nkh">
                                 <rect key="frame" x="0.0" y="20" width="375" height="164"/>
@@ -76,6 +79,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Cx2-5k-EY7"/>
                                 </constraints>
                                 <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="LoginVC:" destination="6EO-R0-78F" eventType="touchUpInside" id="FlD-03-Etj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8v-aR-v2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-860" y="-252"/>
+            <point key="canvasLocation" x="1038" y="-1005"/>
         </scene>
         <!--Login-->
         <scene sceneID="NQD-gI-8kk">
@@ -114,9 +120,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="userNameTF:" destination="rUy-BB-a7i" eventType="editingDidEnd" id="K2W-Fq-4wy"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBy-b1-i4a">
                                 <rect key="frame" x="16" y="81" width="343" height="21"/>
@@ -163,7 +166,6 @@
                     <connections>
                         <outlet property="emailEntry" destination="jwG-oI-dIT" id="Rdk-il-Eri"/>
                         <outlet property="passwordEntry" destination="aEH-id-fRd" id="3FO-b7-92I"/>
-                        <segue destination="k8G-H9-E7d" kind="presentation" identifier="toSignUp" id="dVe-3g-zHU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jfk-Yg-mZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -302,7 +304,7 @@
         <!--Navigation Controller-->
         <scene sceneID="WtQ-44-G8U">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k8G-H9-E7d" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SignUpVC" automaticallyAdjustsScrollViewInsets="NO" id="k8G-H9-E7d" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Acg-1f-CHn">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

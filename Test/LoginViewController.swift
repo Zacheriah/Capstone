@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: emailEntry.text!, password: passwordEntry.text!) { (authResult, error) in
                 if error == nil {
                     print("Sign in successful. \(authResult!.user.uid)")
-                    self.performSegue(withIdentifier: "SignInSuccessful", sender: self)
+                    AppDelegate.showMap()
                 }else{
                     let alert = UIAlertController(title: "Log in error.", message: error.debugDescription, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -46,6 +46,6 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func signup(_ sender: Any) {
-        self.performSegue(withIdentifier: "toSignUp", sender: self)
+        AppDelegate.showSignUp()
     }
 }

@@ -1,14 +1,14 @@
 //
-//  TitleViewController.swift
+//  ProfileViewController.swift
 //  Test
 //
-//  Created by Wayman, Zacheriah on 12/3/19.
+//  Created by Ashford, Aaron on 12/3/19.
 //  Copyright © 2019 Wayman, Zacheriah. All rights reserved.
 //
 
 import UIKit
 
-class TitleViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,14 +16,7 @@ class TitleViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func LoginVC(_ sender: UIButton) {
-        AppDelegate.showLogin()
-    }
-    
-    @IBAction func SignUpButton(_ sender: UIButton) {
-        AppDelegate.showSignUp()
-    }
-    
+
     /*
     // MARK: - Navigation
 
@@ -34,4 +27,7 @@ class TitleViewController: UIViewController {
     }
     */
 
+    @IBAction func mapButton(_ sender: Any) {
+        AppDelegate.showMap()
+    }
 }

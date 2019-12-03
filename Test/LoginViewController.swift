@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
     @IBAction func submit(_ sender: Any) {
         if Auth.auth().currentUser != nil { //checks if a user is already signed in
             print("Already logged in.")
-            self.performSegue(withIdentifier: "SignInSuccessful", sender: self)
+            AppDelegate.showMap()
         }else{
             Auth.auth().signIn(withEmail: emailEntry.text!, password: passwordEntry.text!) { (authResult, error) in
                 if error == nil {

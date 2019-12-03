@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMaps
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -32,6 +33,16 @@ class ViewController: UIViewController {
         marker2.map = mapView
     }
 
-
+    @IBAction func profileButton(_ sender: Any) {
+        AppDelegate.showProfile()
+    }
+    @IBAction func logOutButton(_ sender: Any) {
+        do { // signs the user out
+            try Auth.auth().signOut()
+            AppDelegate.showTitle()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
 }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		08BEA4938FACFE3C0F068D3B /* Pods_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478CDB8DF606F9BA57F678F4 /* Pods_TestUITests.framework */; };
+		1B49A7302396F19300A27E02 /* Pocket_P_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B49A72F2396F19300A27E02 /* Pocket_P_Logo.png */; };
+		1B49A7322396FBDA00A27E02 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49A7312396FBDA00A27E02 /* ProfileViewController.swift */; };
 		30AED20B2A8A619182BD6F60 /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C110680B2A060BEF55E1804 /* Pods_Test.framework */; };
 		54D36A232396EB7700BE933D /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D36A222396EB7700BE933D /* TitleViewController.swift */; };
 		54DF75E4237219B0000D6B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF75E3237219B0000D6B00 /* AppDelegate.swift */; };
@@ -22,8 +24,6 @@
 		54F7D4792373702A001EF24C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54F7D4772373702A001EF24C /* GoogleService-Info.plist */; };
 		54F7D47A2373702A001EF24C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54F7D4772373702A001EF24C /* GoogleService-Info.plist */; };
 		54F7D47C2373733D001EF24C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7D47B2373733D001EF24C /* SignUpViewController.swift */; };
-		54F7D47D2373733D001EF24C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7D47B2373733D001EF24C /* SignUpViewController.swift */; };
-		54F7D47E2373733D001EF24C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F7D47B2373733D001EF24C /* SignUpViewController.swift */; };
 		91D8E36CC0462839FB30AE78 /* Pods_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF35E68096876663788E12F2 /* Pods_TestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		0E474001E2B4AC608C88B6AD /* Pods-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUITests/Pods-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1B49A72F2396F19300A27E02 /* Pocket_P_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pocket_P_Logo.png; sourceTree = "<group>"; };
+		1B49A7312396FBDA00A27E02 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2C110680B2A060BEF55E1804 /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478CDB8DF606F9BA57F678F4 /* Pods_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B24BF90B4B3E66588F4CF7B /* Pods-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTests/Pods-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		54DF75E2237219B0000D6B00 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				1B49A72F2396F19300A27E02 /* Pocket_P_Logo.png */,
 				54DF75E3237219B0000D6B00 /* AppDelegate.swift */,
 				54DF75E5237219B0000D6B00 /* ViewController.swift */,
 				54DF75E7237219B0000D6B00 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 				54F7D47523736CC8001EF24C /* LoginViewController.swift */,
 				54F7D47B2373733D001EF24C /* SignUpViewController.swift */,
 				54D36A222396EB7700BE933D /* TitleViewController.swift */,
+				1B49A7312396FBDA00A27E02 /* ProfileViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -293,6 +297,7 @@
 				54DF75EE237219B1000D6B00 /* LaunchScreen.storyboard in Resources */,
 				54F7D4782373702A001EF24C /* GoogleService-Info.plist in Resources */,
 				54DF75EB237219B1000D6B00 /* Assets.xcassets in Resources */,
+				1B49A7302396F19300A27E02 /* Pocket_P_Logo.png in Resources */,
 				54DF75E9237219B0000D6B00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B49A7322396FBDA00A27E02 /* ProfileViewController.swift in Sources */,
 				54F7D47623736CC8001EF24C /* LoginViewController.swift in Sources */,
 				54DF75E6237219B0000D6B00 /* ViewController.swift in Sources */,
 				54F7D47C2373733D001EF24C /* SignUpViewController.swift in Sources */,
@@ -441,7 +447,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F7D47D2373733D001EF24C /* SignUpViewController.swift in Sources */,
 				54DF75F9237219B1000D6B00 /* TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +455,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F7D47E2373733D001EF24C /* SignUpViewController.swift in Sources */,
 				54DF7604237219B1000D6B00 /* TestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

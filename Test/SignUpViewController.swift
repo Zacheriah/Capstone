@@ -1,48 +1,57 @@
 //
 //  SignUpViewController.swift
-//  Test
+//  InClass12
 //
-//  Created by Wayman, Zacheriah on 11/6/19.
-//  Copyright © 2019 Wayman, Zacheriah. All rights reserved.
+//  Created by Ashford, Aaron on 4/17/19.
+//  Copyright © 2019 Ashford, Aaron. All rights reserved.
 //
+
 
 import UIKit
 import FirebaseAuth
-import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var pword: UITextField!
-    let ref = Database.database().reference()
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passTF: UITextField!
+    @IBOutlet weak var cpassTF: UITextField!
     
+    let alert01 = UIAlertController(title: "Missing Field!", message: "A text field is empty!", preferredStyle: .alert)
+    let alert02 = UIAlertController(title: "Password Mismatch!", message: "Your passwords do not match!", preferredStyle: .alert)
+    let alert03 = UIAlertController(title: "Sign Up Failure!", message: "", preferredStyle: .alert)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
+        self.alert01.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.alert02.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+        self.alert03.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
     }
     
     @IBAction func submit(_ sender: Any) {
-        Auth.auth().createUser(withEmail: email.text!, password: pword.text!) { (authResult, error) in //sign up code
-            if error == nil {
-                print("Sign up successful.")
-                let user = Auth.auth().currentUser
-                self.ref.child("users").child((user?.uid)!).setValue(["email": self.email.text, "name": self.name.text], withCompletionBlock: {
-                    (error, dbRef) in
-                    
-                })
-                
-            }else{
-                let alert = UIAlertController(title: "Sign up error.", message: error.debugDescription, preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-                self.present(alert, animated: true)
-                print("Sign up error \(error.debugDescription)")
+        if Auth.auth().currentUser != nil {
+            self.alert03.message = "A User is Already Logged In!"
+            print("1")
+        } else if (emailTF.text == nil || passTF.text == nil) {
+            self.present(self.alert01, animated: true)
+            print("2")
+        } else if (passTF.text != cpassTF.text) {
+            self.present(self.alert02, animated: true)
+            print("3")
+        } else {
+            Auth.auth().createUser(withEmail: emailTF.text!, password: passTF.text!) { (authResult, error) in
+                if error == nil {
+                    AppDelegate.showLogin()
+                } else {
+                    self.alert03.message = error.debugDescription
+                    self.present(self.alert03, animated: true)
+                }
             }
         }
     }
-
-    @IBAction func myUnwindFunction(unwindSegue: UIStoryboardSegue){
-        
-}
+    
+    @IBAction func cancelClicked(_ sender: Any) {
+        AppDelegate.showTitle()
+    }
 }

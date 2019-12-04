@@ -6,7 +6,6 @@
 //  Copyright © 2019 Ashford, Aaron. All rights reserved.
 //
 
-
 import UIKit
 import FirebaseAuth
 

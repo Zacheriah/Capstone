@@ -9,12 +9,15 @@
 import UIKit
 import GoogleMaps
 import FirebaseAuth
+import CoreLocation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var mapView: UIView!
+    let locationmanager = CLLocationManager()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let camera = GMSCameraPosition.camera(withLatitude: 35.307090, longitude: -80.735671,    zoom: 17.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
@@ -33,6 +36,26 @@ class ViewController: UIViewController {
         marker2.map = mapView
     }
 
+    func enablebasiclocationservices(){
+        locationmanager.delegate = (self as! CLLocationManagerDelegate)
+        
+        switch CLLocationManager.authorizationStatus(){
+        case .notDetermined:
+            locationmanager.requestAlwaysAuthorization()
+        case .restricted:
+            //asa
+            print("y tho")
+        case .denied:
+            //asa
+            print("y tho")
+        case .authorizedAlways:
+            //do stuff in this one, extension for viewcontroller based on CLLOcationmanager
+            print("this one")
+        case .authorizedWhenInUse:
+            <#code#>
+        }
+    }
+    
     @IBAction func profileButton(_ sender: Any) {
         AppDelegate.showProfile()
     }

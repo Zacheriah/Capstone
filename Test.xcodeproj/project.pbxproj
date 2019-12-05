@@ -153,11 +153,11 @@
 			isa = PBXGroup;
 			children = (
 				54549C5023999FB10071DF96 /* test.jpeg */,
-				54549C4C23999FAA0071DF96 /* orange.jpg */,
 				1B49A72F2396F19300A27E02 /* Pocket_P_Logo.png */,
 				54DF75E3237219B0000D6B00 /* AppDelegate.swift */,
 				54DF75E5237219B0000D6B00 /* ViewController.swift */,
 				54DF75E7237219B0000D6B00 /* Main.storyboard */,
+				54549C4C23999FAA0071DF96 /* orange.jpg */,
 				54DF75EA237219B1000D6B00 /* Assets.xcassets */,
 				54DF75EC237219B1000D6B00 /* LaunchScreen.storyboard */,
 				54DF75EF237219B1000D6B00 /* Info.plist */,

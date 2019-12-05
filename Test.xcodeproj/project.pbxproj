@@ -11,6 +11,13 @@
 		1B49A7302396F19300A27E02 /* Pocket_P_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B49A72F2396F19300A27E02 /* Pocket_P_Logo.png */; };
 		1B49A7322396FBDA00A27E02 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49A7312396FBDA00A27E02 /* ProfileViewController.swift */; };
 		30AED20B2A8A619182BD6F60 /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C110680B2A060BEF55E1804 /* Pods_Test.framework */; };
+		54549C4B23999D350071DF96 /* DigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54549C4A23999D350071DF96 /* DigViewController.swift */; };
+		54549C4D23999FAA0071DF96 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54549C4C23999FAA0071DF96 /* orange.jpg */; };
+		54549C4E23999FAA0071DF96 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54549C4C23999FAA0071DF96 /* orange.jpg */; };
+		54549C4F23999FAA0071DF96 /* orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54549C4C23999FAA0071DF96 /* orange.jpg */; };
+		54549C5123999FB10071DF96 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 54549C5023999FB10071DF96 /* test.jpeg */; };
+		54549C5223999FB10071DF96 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 54549C5023999FB10071DF96 /* test.jpeg */; };
+		54549C5323999FB10071DF96 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 54549C5023999FB10071DF96 /* test.jpeg */; };
 		54D36A232396EB7700BE933D /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D36A222396EB7700BE933D /* TitleViewController.swift */; };
 		54DF75E4237219B0000D6B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF75E3237219B0000D6B00 /* AppDelegate.swift */; };
 		54DF75E6237219B0000D6B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF75E5237219B0000D6B00 /* ViewController.swift */; };
@@ -51,6 +58,9 @@
 		2C110680B2A060BEF55E1804 /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478CDB8DF606F9BA57F678F4 /* Pods_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B24BF90B4B3E66588F4CF7B /* Pods-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestTests/Pods-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54549C4A23999D350071DF96 /* DigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigViewController.swift; sourceTree = "<group>"; };
+		54549C4C23999FAA0071DF96 /* orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = orange.jpg; sourceTree = "<group>"; };
+		54549C5023999FB10071DF96 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
 		54D36A222396EB7700BE933D /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		54DF75E0237219B0000D6B00 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DF75E3237219B0000D6B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +152,8 @@
 		54DF75E2237219B0000D6B00 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				54549C5023999FB10071DF96 /* test.jpeg */,
+				54549C4C23999FAA0071DF96 /* orange.jpg */,
 				1B49A72F2396F19300A27E02 /* Pocket_P_Logo.png */,
 				54DF75E3237219B0000D6B00 /* AppDelegate.swift */,
 				54DF75E5237219B0000D6B00 /* ViewController.swift */,
@@ -153,6 +165,7 @@
 				54F7D47B2373733D001EF24C /* SignUpViewController.swift */,
 				54D36A222396EB7700BE933D /* TitleViewController.swift */,
 				1B49A7312396FBDA00A27E02 /* ProfileViewController.swift */,
+				54549C4A23999D350071DF96 /* DigViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -294,7 +307,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54549C5123999FB10071DF96 /* test.jpeg in Resources */,
 				54DF75EE237219B1000D6B00 /* LaunchScreen.storyboard in Resources */,
+				54549C4D23999FAA0071DF96 /* orange.jpg in Resources */,
 				54F7D4782373702A001EF24C /* GoogleService-Info.plist in Resources */,
 				54DF75EB237219B1000D6B00 /* Assets.xcassets in Resources */,
 				1B49A7302396F19300A27E02 /* Pocket_P_Logo.png in Resources */,
@@ -307,6 +322,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F7D4792373702A001EF24C /* GoogleService-Info.plist in Resources */,
+				54549C4E23999FAA0071DF96 /* orange.jpg in Resources */,
+				54549C5223999FB10071DF96 /* test.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F7D47A2373702A001EF24C /* GoogleService-Info.plist in Resources */,
+				54549C4F23999FAA0071DF96 /* orange.jpg in Resources */,
+				54549C5323999FB10071DF96 /* test.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B49A7322396FBDA00A27E02 /* ProfileViewController.swift in Sources */,
+				54549C4B23999D350071DF96 /* DigViewController.swift in Sources */,
 				54F7D47623736CC8001EF24C /* LoginViewController.swift in Sources */,
 				54DF75E6237219B0000D6B00 /* ViewController.swift in Sources */,
 				54F7D47C2373733D001EF24C /* SignUpViewController.swift in Sources */,

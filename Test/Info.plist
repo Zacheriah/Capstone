@@ -48,5 +48,7 @@
 	</array>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>To provide realtime location data to determine if you are close enough to a marker to interact with it</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To provide realtime location data to determine if you are close enough to a marker to interact with it</string>
 </dict>
 </plist>

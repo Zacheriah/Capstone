@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="inventoryTableViewCell" customModule="Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dinoName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gek-3E-Utf">
+                        <rect key="frame" x="16" y="16" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dinoDiet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbl-v8-EZf">
+                        <rect key="frame" x="16" y="42" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dinoEra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXn-hQ-LnS">
+                        <rect key="frame" x="16" y="68" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="VXn-hQ-LnS" secondAttribute="trailing" id="7tm-Uc-zef"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vbl-v8-EZf" secondAttribute="trailing" id="Iom-QN-KkH"/>
+                    <constraint firstItem="vbl-v8-EZf" firstAttribute="top" secondItem="gek-3E-Utf" secondAttribute="bottom" constant="5" id="JUY-rY-4Rx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gek-3E-Utf" secondAttribute="trailing" id="N7f-T0-45Y"/>
+                    <constraint firstItem="VXn-hQ-LnS" firstAttribute="top" secondItem="vbl-v8-EZf" secondAttribute="bottom" constant="5" id="NHy-Uq-4lo"/>
+                    <constraint firstItem="VXn-hQ-LnS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fKI-75-elg"/>
+                    <constraint firstItem="gek-3E-Utf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="fOW-ua-HsM"/>
+                    <constraint firstItem="gek-3E-Utf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="iMT-TG-PnL"/>
+                    <constraint firstItem="vbl-v8-EZf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="sFj-Ol-3od"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dinoDiet" destination="vbl-v8-EZf" id="suQ-SR-gVe"/>
+                <outlet property="dinoEra" destination="VXn-hQ-LnS" id="7ZN-8A-Z3V"/>
+                <outlet property="dinoName" destination="gek-3E-Utf" id="GbG-Xe-sCV"/>
+            </connections>
+            <point key="canvasLocation" x="129.59999999999999" y="174.51274362818592"/>
+        </tableViewCell>
+    </objects>
+</document>
